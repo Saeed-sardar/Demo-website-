@@ -1,0 +1,229 @@
+{% extends "base.html" %}
+
+{% block title %}
+Urban Spice | Modern Restaurant
+{% endblock %}
+
+
+{% block content %}
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <p class="eyebrow">
+            MODERN DINING · KARACHI
+        </p>
+
+        <h1>
+            Good food.
+            <br>
+            <em>Great moments.</em>
+        </h1>
+
+        <p class="hero-description">
+            Contemporary flavors, locally inspired ingredients
+            and a dining experience made for sharing.
+        </p>
+
+        <div class="hero-actions">
+
+            <a
+                href="{{ url_for('menu') }}"
+                class="primary-button">
+
+                Explore Menu
+
+            </a>
+
+
+            <a
+                href="{{ url_for('contact') }}"
+                class="text-button">
+
+                Reserve a table →
+
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-card">
+
+        <div class="food-icon">
+            🍽️
+        </div>
+
+        <span>
+            CHEF'S CHOICE
+        </span>
+
+        <h2>
+            Smoky Herb Platter
+        </h2>
+
+        <p>
+            Freshly prepared · Rs. 1,850
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<section class="stats">
+
+    <div>
+        <strong>12+</strong>
+        <span>Signature dishes</span>
+    </div>
+
+    <div>
+        <strong>4.9★</strong>
+        <span>Guest rating</span>
+    </div>
+
+    <div>
+        <strong>8 yrs</strong>
+        <span>Serving Karachi</span>
+    </div>
+
+    <div>
+        <strong>7 days</strong>
+        <span>Open every week</span>
+    </div>
+
+</section>
+
+
+
+<section id="about" class="about-section">
+
+    <div class="story-box">
+        OUR<br>
+        STORY
+    </div>
+
+
+    <div class="about-content">
+
+        <p class="eyebrow">
+            ABOUT US
+        </p>
+
+        <h2>
+            A table worth coming back to.
+        </h2>
+
+        <p>
+            Urban Spice brings familiar South Asian flavors
+            into a fresh, modern setting.
+
+            Every plate is prepared with care, from our
+            kitchen to your table.
+        </p>
+
+        <a
+            href="{{ url_for('contact') }}"
+            class="text-button">
+
+            Plan your visit →
+
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<section id="features" class="features-section">
+
+    <p class="eyebrow">
+        WHY GUESTS LOVE US
+    </p>
+
+    <h2>
+        Made for every occasion.
+    </h2>
+
+
+    <div class="feature-grid">
+
+        <article class="feature-card">
+
+            <span>01</span>
+
+            <h3>
+                Fresh ingredients
+            </h3>
+
+            <p>
+                Carefully selected ingredients
+                in every dish.
+            </p>
+
+        </article>
+
+
+        <article class="feature-card">
+
+            <span>02</span>
+
+            <h3>
+                Warm service
+            </h3>
+
+            <p>
+                A relaxed atmosphere with friendly
+                service from arrival to dessert.
+            </p>
+
+        </article>
+
+
+        <article class="feature-card">
+
+            <span>03</span>
+
+            <h3>
+                Private events
+            </h3>
+
+            <p>
+                Celebrate birthdays, dinners and
+                small gatherings with us.
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+
+<section class="cta-section">
+
+    <p class="eyebrow">
+        YOUR TABLE IS WAITING
+    </p>
+
+    <h2>
+        Make tonight delicious.
+    </h2>
+
+    <a
+        href="{{ url_for('contact') }}"
+        class="primary-button">
+
+        Book a Table
+
+    </a>
+
+</section>
+
+{% endblock %}
